@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Julee&display=swap" rel="stylesheet">
+        <title>The Flower Shop</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body{
+                font-family: "Julee", serif;
+                font-weight: 500;
+                font-style: normal;
+            }
+            .nav-link:hover{
+                color: whitesmoke;
+                font-size: 18px;
+            }
+
+            .hero-image {
+                background-image: url('https://via.placeholder.com/1500x500');
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            }
+            .hero-image h1 {
+                font-size: 3rem;
+            }
+            .card {
+                border: none;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            
+            .rounded-circle{
+                width: 100px;
+            }
+            .pic{
+                height: 500px;
+            }
+            .gradient, 
+            .card-body,
+            footer{
+                background: rgb(195,141,161);
+                background: radial-gradient(circle, rgba(195,141,161,1) 0%, rgba(65,110,162,1) 94%);
+            }
+            .client-body{
+                background: rgb(144,121,177);
+                background: radial-gradient(circle, rgba(144,121,177,1) 3%, rgba(4,11,152,1) 100%);
+            }
+            .logo{
+                width:30px;
+                margin: 0 15px 0 15px;              
+            }
+            
+        </style>
+    </head>
+    <body class="bg-light">
+
+        <!-- Header -->
+        <nav class="navbar navbar-expand-lg navbar-light gradient">
+            <div class="container">  
+                <img class="rounded-circle logo" src="logos/logo.png">             
+                <a class="navbar-brand text-white " href="#" > The Flower Shop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#showcase">Showcase</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#plans">Pricing Plans</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="container-fluid" id="home">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--carousel starts here-->
+                    <div class="carousel slide carousel-fade " id="demo" data-bs-ride="carousel">
+                        <!--Carousel images starts here-->
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <img src="1.jpg" class="d-block pic w-100">                        
+                            </div>
+                            <div class="carousel-item">
+                                <img src="2.jpg" class="d-block pic  w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="3.jpg" class="d-block pic  w-100">
+                            </div>
+                        </div>
+                        <!--Carousel images starts here-->
+
+                        <!--Left and Right Controls starts here-->
+                        <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#demo">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#demo">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <!--Left and Right Controls ends here-->
+
+                        <!--Indicators starts here-->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" class="active" data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+                        <!--Indicators ends here-->
+
+                    </div>
+                    <!--carousel ends here-->
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        
+        <div class="container text-center py-5" id="about">
+            <h1>Know About Us</h1>
+            <p>Welcome to The Flower Shop, your premier destination for exquisite flower decoration services. At The Flower Shop, we are passionate about transforming spaces into enchanting and memorable experiences through the beauty of flowers. Our journey began in 2024 with a vision to bring joy and elegance to every occasion. Over the years, we have had the privilege of working with countless clients, creating stunning floral arrangements for weddings, events, and special celebrations.</p>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-3">
+                    <h4>Our Mission</h4>
+                    <p>Our mission at The Flower Shop is to spread happiness and create lasting memories through the artistry of flowers. We strive to exceed expectations, delivering exceptional floral designs and unparalleled service to our valued clients.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h4>Our Pledge</h4>
+                    <p>Our pledge is to continuously push the boundaries of floral design, infusing each creation with passion, precision, and a touch of enchantment. We believe that flowers have the power to elevate the human experience, celebrating life’s precious moments with grace and beauty.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Our Vision</h4>
+                    <p>We aspire to be the leading innovators in the floral industry, setting new standards for creativity, quality, and personalized service. Our vision is to share the artistry of flowers, making each interaction with our creations a memorable and joyful affair.</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Showcase Section -->
+        
+        <div class="container text-center py-5" id="showcase">
+            <h1>Featured Showcase</h1>
+            <div class="row mt-4">
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="products/p1.jpg" class="card-img-top" alt="Tulip">
+                        <div class="card-body">
+                            <h3 class="card-title">Tulip Flower</h3>
+                            <p class="card-text">The tulip is a beautiful and popular flower known 
+                                for its vibrant colors and distinct shape. It is often associated
+                                with love and springtime, making it a favorite choice for 
+                                including weddings and celebrations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="products/p2.jpg" class="card-img-top" alt="Red & White">
+                        <div class="card-body">
+                            <h3 class="card-title">Red & White Flower</h3>
+                            <p class="card-text">Red and white flowers are known for their
+                                beauty and symbolism. They are often associated with love.
+                                Here at The Flower Shop, we specialize
+                                in creating stunning arrangements red and white flowers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="products/p3.jpg" class="card-img-top" alt="Black Eyed">
+                        <div class="card-body">
+                            <h3 class="card-title">Black Eyed Flower</h3>
+                            <p class="card-text">Black-Eyed Flower susans are native to North America and South America are often found  in gardens and meadows. They bloom from late spring to fall, attracting butterflies and bees.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="products/p4.jpg" class="card-img-top" alt="Lily">
+                        <div class="card-body">
+                            <h3 class="card-title">Lily Flower</h3>
+                            <p class="card-text">Lilies belong to various species and come in vibrant colors. They symbolize purity and devotion, making them a perfect choice for weddings and celebrations and attracting butterflies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="products/p5.jpg" class="card-img-top" alt="Tulip">
+                        <div class="card-body">
+                            <h3 class="card-title">Rose Flower</h3>
+                            <p class="card-text">Roses belong to the genus Rosa and come in a variety of colors, including red, pink, white, and yellow. They are widely used in bouquets, gardens, and as expressions of love and affection</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="products/p6.jpg" class="card-img-top" alt="Red & White">
+                        <div class="card-body">
+                            <h3 class="card-title">Orange Rose Flower</h3>
+                            <p class="card-text">Orange roses are often associated enthusiasm,energy and desire. They are perfect choice to convey feelings of admiration and attraction. The orange hue adds a burst and attracting bees and butterflies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="products/p7.jpg" class="card-img-top" alt="Black Eyed">
+                        <div class="card-body">
+                            <h3 class="card-title">Sun Flower</h3>
+                            <p class="card-text">Sunflowers are native to America and are named for their tendency to turn their faces towards the sun. Sun Flower have large and yellow-rayed petals surrounding a central disk. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="products/p8.jpg" class="card-img-top" alt="Lily">
+                        <div class="card-body">
+                            <h3 class="card-title">Magnoliya Flower</h3>
+                            <p class="card-text">Magnolias are ancient flowers that date back millions of years. Magnoliya flowers come in various species, and their blossoms can be white, pink, or purple. Magnolias symbolize beauty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Testimonials Section -->
+        <div class="container-fluid text-center my-5" id="testimonials">
+            <h1>Our Testimonials</h1>
+            <div id="testimonialCarousel" class="carousel client-body slide mt-3" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item mt-3 mb-3 active">
+                        <img src="clients/4.jpg" class="rounded-circle" alt="">
+                        <p>"Amazing service and beautiful flowers!"</p>
+                        <h4> Client 1</h4>
+                    </div>
+                    <div class="carousel-item mt-3 mb-3">
+                        <img src="clients/4.jpg" class="rounded-circle" alt="">
+                        <p>"Excellent arrangements for our event."</p>
+                        <h4> Client 2</h4>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+        
+
+        <!-- Pricing Section -->
+        
+        <div class="container py-5" id="plans">
+            <h1 class="mb-4 text-center">Pricing Plans</h1>
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Basic Plan</h3>
+                            <span class="text-muted">for small events</span>
+                            <p class="card-text"><span class="fs-5 fw-bold">$49/month</span><br>Flower arrangement <br> for small events <br>parties and celebrations.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Premium Plan</h3>
+                            <span class="text-muted">for medium events</span>
+                            <p class="card-text"><span class="fs-5 fw-bold">$99/month</span><br>Custom flower arrangement <br> medium-sized events with <br> extra floral arrangements.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold">Deluxe Plan</h3>
+                            <span class="text-muted">for large events</span>
+                            <p class="card-text"><span class="fs-5 fw-bold">$149/month</span><br>For large events with <br> personalized floral designs <br> and nanue decoration.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Contact Section -->
+        
+        <div class="container py-5" id="contact">
+            <h1 class="text-center">Contact Us</h1>
+            <p class="text-center">Have questions or feedback? Reach out to us!</p>
+            <form id="contactForm" class="mx-auto " style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" id="name" class="form-control " required>                              
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" id="email" class="form-control " required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea id="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+        </div>
+        
+
+        <!-- Footer -->
+        <footer  class="text-center pb-1 pt-3 mt-5">
+            <p>&copy; 2024 The Floral Store. All rights reserved.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                if (name && email && message) {
+                    alert(`Thank you for contacting us, ${name}! We will respond to you at ${email}.`);
+                    document.getElementById('contactForm').reset();
+                } else {
+                    alert('Please fill out all fields before submitting.');
+                }
+            });
+        </script>
+    </body>
+</html> 
